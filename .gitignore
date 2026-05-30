@@ -1,0 +1,25 @@
+# Secrets — never commit real credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+config/credentials*.json
+
+# Logs & runtime
+logs/*
+!logs/.gitkeep
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python (if you run Hermes tooling locally)
+__pycache__/
+*.pyc
+.venv/
+venv/
