@@ -26,5 +26,5 @@
 
 ## Context about me
 - Timezone: _<e.g. America/Toronto>_
-- Current projects: Vintage Card Watch (eBay card tracker)
+- Current projects: _<add as relevant>_
 - Preferences: _<add as you learn them>_
