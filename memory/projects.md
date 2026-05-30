@@ -11,6 +11,7 @@
   - Fill in Discord bot/app details.
   - Decide whether to enable nightly GitHub backup.
   - Add real Hermes skills as repeated tasks emerge.
+  - Pull new skills on the VPS after pushing local repo changes.
 
 ## Future Agent Projects
 

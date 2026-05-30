@@ -15,3 +15,13 @@ Use skills when Hermes repeats the same workflow more than once. Keep them
 specific enough that Hermes knows when to trigger them.
 
 Start from `skills/_template/SKILL.md`.
+
+## Personal Skills
+
+- `youtube-summarizer`: video summaries, tutorials, and action items.
+- `web-research`: current web research with source links.
+- `market-brief`: stocks, crypto, macro, earnings, and watchlists.
+- `memory-librarian`: durable memory and project state cleanup.
+- `discord-operator`: safer help through Discord/chat surfaces.
+- `vps-triage`: live Hermes VPS/container debugging.
+- `safe-github-backup`: safe GitHub commits and pushes without secrets.

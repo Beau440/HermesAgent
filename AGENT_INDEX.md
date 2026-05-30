@@ -35,6 +35,16 @@ agent.
 4. Keep `deployment/` current after VPS changes.
 5. Commit safe changes to GitHub.
 
+## Core Personal Skills
+
+- YouTube summaries: `skills/youtube-summarizer/`
+- Web research: `skills/web-research/`
+- Market briefings: `skills/market-brief/`
+- Memory cleanup: `skills/memory-librarian/`
+- Discord/chat operations: `skills/discord-operator/`
+- VPS triage: `skills/vps-triage/`
+- Safe GitHub backup: `skills/safe-github-backup/`
+
 ## Quick Health Check
 
 ```bash
