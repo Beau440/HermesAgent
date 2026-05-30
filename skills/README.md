@@ -1,15 +1,17 @@
 # Skills
 
-Each skill is a folder containing a `SKILL.md` with YAML frontmatter and a Markdown body.
-Optionally add `scripts/`, `references/`, and `assets/` subfolders.
+Each skill is a reusable playbook. Create a new folder for each skill and put the
+instructions in `SKILL.md`.
 
-```
+```text
 skills/
-  my-skill/
+  nightly-backup/
     SKILL.md
-    scripts/      (optional)
-    references/   (optional)
-    assets/       (optional)
+  vps-triage/
+    SKILL.md
 ```
 
-See `_template/SKILL.md` for the starting point. Copy the folder and rename it.
+Use skills when Hermes repeats the same workflow more than once. Keep them
+specific enough that Hermes knows when to trigger them.
+
+Start from `skills/_template/SKILL.md`.

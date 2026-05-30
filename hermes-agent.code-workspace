@@ -1,0 +1,85 @@
+{
+  "folders": [
+    {
+      "name": "Hermes Agent Command Center",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/__pycache__": true,
+      "**/.venv": true
+    },
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/logs/**": true
+    },
+    "markdown.validate.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "workbench.panel.defaultLocation": "right",
+    "workbench.panel.opensMaximized": "never",
+    "workbench.sideBar.location": "left",
+    "workbench.editor.openSideBySideDirection": "right",
+    "workbench.editor.splitSizing": "split",
+    "workbench.editor.showTabs": "multiple",
+    "workbench.editor.labelFormat": "medium",
+    "explorer.compactFolders": false,
+    "breadcrumbs.enabled": true,
+    "claudeCode.preferredLocation": "panel"
+  },
+  "extensions": {
+    "recommendations": [
+      "formulahendry.acp-client",
+      "anthropic.claude-code",
+      "github.vscode-github-actions"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Agent: Open Codex",
+        "type": "process",
+        "command": "C:\\Users\\BeauB\\AppData\\Local\\OpenAI\\Codex\\bin\\958d608b5e0546a5\\codex.exe",
+        "args": [
+          "--cd",
+          "${workspaceFolder}"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": true,
+          "panel": "dedicated",
+          "showReuseMessage": false,
+          "clear": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Agent: Open Claude Code CLI",
+        "type": "shell",
+        "command": "claude",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": true,
+          "panel": "dedicated",
+          "showReuseMessage": false,
+          "clear": false
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+}

@@ -1,11 +1,24 @@
 # Memory
 
-Durable, human-readable memory. The agent reads from and writes to these notes so it
-remembers facts across sessions. Keep one topic per file, named clearly.
+Memory is durable context for Hermes. Keep it specific, current, and safe.
 
-Suggested files:
-- `about-me.md` — stable facts about Beau (preferences, accounts, routines)
-- `decisions.md` — choices made and why (so the agent doesn't relitigate them)
-- `projects.md` — status of ongoing projects
+## Files
 
-Keep secrets OUT of here — those belong in `.env` (gitignored).
+| File | Purpose |
+| --- | --- |
+| `about-me.md` | Stable facts about Beau |
+| `projects.md` | Active projects and status |
+| `decisions.md` | Decisions made and why |
+| `preferences.md` | How Beau likes work handled |
+
+## Rules
+
+- Do not store secrets here.
+- Prefer stable facts over temporary chat context.
+- Date decisions so old context can be pruned later.
+- Keep one idea per bullet when possible.
+
+## Maintenance
+
+Review memory regularly. Stale memory can make an agent behave strangely because
+it confidently follows outdated assumptions.

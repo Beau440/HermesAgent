@@ -6,6 +6,8 @@
 *.pem
 secrets/
 config/credentials*.json
+config/*private*
+config/*secret*
 
 # Logs & runtime
 logs/*
@@ -17,6 +19,10 @@ logs/*
 Thumbs.db
 .vscode/
 .idea/
+
+# Local notes that may contain machine-specific paths or copied terminal output
+local-notes/
+*.local.md
 
 # Python (if you run Hermes tooling locally)
 __pycache__/

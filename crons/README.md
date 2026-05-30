@@ -1,22 +1,34 @@
-# Crons — scheduled automations
+# Crons And Scheduled Automations
 
-Document each scheduled task Hermes runs: what it does, when, and why. This is your
-human-readable registry (the actual schedule is configured inside Hermes).
+This is the human-readable registry of scheduled jobs. The actual scheduler may
+live inside Hermes, Docker, the VPS panel, or another service.
 
 ## Format
 
-```
-### <task name>
-- Schedule: <cron expression or plain English, e.g. "every day 8am">
-- Does: <what it does>
-- Why: <why it exists>
-- Notifies: <where output goes, e.g. Telegram>
+```markdown
+### task-name
+- Status: active / paused / planned
+- Schedule: every day at 08:00 America/New_York
+- Surface: Hermes cron / VPS cron / Docker / GitHub Actions
+- Does: one plain-English sentence
+- Why: one plain-English sentence
+- Notifies: Discord / Telegram / email / none
+- Owner: Beau / Hermes
+- Risk: low / medium / high
 ```
 
-## Active automations
+## Active Automations
 
-### example-morning-brief
-- Schedule: every day 08:00
-- Does: summarizes overnight emails/news into a short brief
-- Why: start the day informed without digging
-- Notifies: Telegram
+No active automations documented yet.
+
+## Planned Automations
+
+### nightly-agent-backup
+- Status: planned
+- Schedule: every night after midnight
+- Surface: Hermes cron
+- Does: commits and pushes safe changes from this command center repo
+- Why: preserve memory, skills, and setup notes if the VPS breaks
+- Notifies: Discord or Telegram with success/failure
+- Owner: Hermes
+- Risk: medium
