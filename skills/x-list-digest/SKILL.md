@@ -18,12 +18,17 @@ Primary list:
 
 Do not require X API access. Use the best available public path:
 
-1. Browser automation for the public X list page, if available.
-2. Firecrawl/web extraction for accessible post pages or mirrors.
+1. Firecrawl/web extraction for accessible post pages, list pages, embeds, or
+   mirrors.
+2. Browser automation for the public X list page, if available.
 3. DuckDuckGo/web search for `site:x.com` posts from list members or quoted
    pages.
 4. Public mirrors, article embeds, newsletters, or search snippets.
 5. Ask Beau for the post text if X blocks access.
+
+If Firecrawl fails, times out, rate-limits, or appears to be out of credits,
+fall back to DuckDuckGo/public web search and browser-accessible pages. Mention
+the fallback briefly in the digest only when it affects confidence or coverage.
 
 ## Steps
 
@@ -70,3 +75,5 @@ For scheduled digests:
 - Never post, like, repost, follow, DM, or engage without explicit approval.
 - Treat X as signal, not ground truth.
 - Do not spam Beau with low-value posts just because the cron ran.
+- Do not keep retrying Firecrawl after a credit/rate-limit failure during the
+  same digest run.
