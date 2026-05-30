@@ -65,6 +65,8 @@ as operating playbooks by reading the matching `SKILL.md` when Beau invokes them
 - `x-post-digest`: summarize X/Twitter posts, threads, profiles, and posts from
   specific people without requiring X API access. Treat X as a signal source and
   corroborate important claims.
+- `x-list-digest`: monitor Beau's X list for interesting public posts and send a
+  concise breakdown on a recurring cadence.
 - `market-brief`: explain stocks, crypto, macro events, earnings, and watchlists
   with current sources and no buy/sell directives.
 - `memory-librarian`: update durable memory files and project state without

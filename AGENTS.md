@@ -26,6 +26,10 @@ Important personal skills:
 - `x-post-digest`: digest X/Twitter posts, threads, profiles, and posts from
   specific people. Do not require X API access; use public web, browser, or
   Firecrawl sources first, and corroborate important claims with non-X sources.
+- `x-list-digest`: scan Beau's X list
+  `https://x.com/i/lists/1983435862911103455` for interesting public posts and
+  produce a concise breakdown. Use public web/browser/Firecrawl routes; no X API
+  required.
 - `market-brief`: financial market summaries with current sources, no direct
   buy/sell instructions.
 - `memory-librarian`: durable memory and project state cleanup.
