@@ -39,6 +39,7 @@ agent.
 
 - YouTube summaries: `skills/youtube-summarizer/`
 - Web research: `skills/web-research/`
+- X/Twitter post digests: `skills/x-post-digest/`
 - Market briefings: `skills/market-brief/`
 - Memory cleanup: `skills/memory-librarian/`
 - Discord/chat operations: `skills/discord-operator/`

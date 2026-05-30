@@ -23,6 +23,9 @@ Important personal skills:
   permission at most once. If blocked, summarize from available metadata or ask
   Beau for the transcript.
 - `web-research`: current web research with source links and caveats.
+- `x-post-digest`: digest X/Twitter posts, threads, profiles, and posts from
+  specific people. Do not require X API access; use public web, browser, or
+  Firecrawl sources first, and corroborate important claims with non-X sources.
 - `market-brief`: financial market summaries with current sources, no direct
   buy/sell instructions.
 - `memory-librarian`: durable memory and project state cleanup.
@@ -43,3 +46,11 @@ Important personal skills:
 - Live soul symlink: `/opt/data/SOUL.md`
 - Personal skills repo path: `/opt/data/HermesAgent/skills`
 - Live skills path: `/opt/data/skills`
+
+## Web And X Access
+
+- Prefer official Hermes tools/skills when available.
+- For X/Twitter, do not assume Beau has X API access. Use public web/browser
+  extraction first. `xurl` and `x_search` are optional upgrades only.
+- For page reading, prefer Firecrawl/browser extraction when configured.
+- If access is blocked, say what source failed and use the next safe fallback.

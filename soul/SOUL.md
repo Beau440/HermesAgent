@@ -62,6 +62,9 @@ as operating playbooks by reading the matching `SKILL.md` when Beau invokes them
   summarize from transcript text Beau provides or available page metadata.
 - `web-research`: search current web sources, compare source quality, cite links,
   and clearly separate facts from inference.
+- `x-post-digest`: summarize X/Twitter posts, threads, profiles, and posts from
+  specific people without requiring X API access. Treat X as a signal source and
+  corroborate important claims.
 - `market-brief`: explain stocks, crypto, macro events, earnings, and watchlists
   with current sources and no buy/sell directives.
 - `memory-librarian`: update durable memory files and project state without
