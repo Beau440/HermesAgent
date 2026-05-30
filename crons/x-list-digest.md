@@ -8,6 +8,7 @@ short breakdown.
 ## Source
 
 - X list: `https://x.com/i/lists/1983435862911103455`
+- Fallback watchlist: `/opt/data/HermesAgent/config/x-watchlist.md`
 - Preferred tools: Firecrawl/web extract, browser automation, DuckDuckGo/web
   search.
 - Fallback: if Firecrawl fails, times out, rate-limits, or runs out of credits,
@@ -25,10 +26,12 @@ Use `x-list-digest`, `x-post-digest`, `web-research`, and `discord-operator`.
 Scan the public X list at `https://x.com/i/lists/1983435862911103455` for recent
 interesting posts. Use Firecrawl first for web extraction; if Firecrawl fails,
 times out, rate-limits, or runs out of credits, fall back to DuckDuckGo/public
-web search and browser-accessible pages. Do not require X API access. Select only
-high-signal posts, group them by theme, include source links when available, and
-send Beau a concise Discord-friendly breakdown. If nothing interesting is found,
-send nothing unless there has been no status update today.
+web search and browser-accessible pages. If the X list URL is blocked, read
+`/opt/data/HermesAgent/config/x-watchlist.md` and search recent public posts from
+those handles instead. Do not require X API access. Select only high-signal
+posts, group them by theme, include source links when available, and send Beau a
+concise Discord-friendly breakdown. If nothing interesting is found, send nothing
+unless there has been no status update today.
 
 ## Output
 

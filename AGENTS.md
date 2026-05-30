@@ -29,7 +29,7 @@ Important personal skills:
 - `x-list-digest`: scan Beau's X list
   `https://x.com/i/lists/1983435862911103455` for interesting public posts and
   produce a concise breakdown. Use public web/browser/Firecrawl routes; no X API
-  required.
+  required. If the list URL is blocked, use `config/x-watchlist.md`.
 - `market-brief`: financial market summaries with current sources, no direct
   buy/sell instructions.
 - `memory-librarian`: durable memory and project state cleanup.

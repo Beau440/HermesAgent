@@ -26,6 +26,7 @@ agent.
 | Scheduled jobs | `crons/` |
 | Runtime settings | `config/` |
 | VPS instructions | `deployment/` |
+| X/Twitter watchlist | `config/x-watchlist.md` |
 
 ## Daily Operating Loop
 

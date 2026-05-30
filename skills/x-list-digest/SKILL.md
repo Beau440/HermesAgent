@@ -8,11 +8,16 @@ description: Use when Beau wants recurring digests of public posts from an X/Twi
 ## When To Use
 
 Use this when Beau provides an X list URL, a group of handles, or asks for an
-ongoing digest of posts from specific people.
+ongoing digest of posts from specific people. If the X list URL is blocked, use
+the handle watchlist at `/opt/data/HermesAgent/config/x-watchlist.md`.
 
 Primary list:
 
 - `https://x.com/i/lists/1983435862911103455`
+
+Fallback watchlist:
+
+- `/opt/data/HermesAgent/config/x-watchlist.md`
 
 ## Source Strategy
 
@@ -21,8 +26,7 @@ Do not require X API access. Use the best available public path:
 1. Firecrawl/web extraction for accessible post pages, list pages, embeds, or
    mirrors.
 2. Browser automation for the public X list page, if available.
-3. DuckDuckGo/web search for `site:x.com` posts from list members or quoted
-   pages.
+3. DuckDuckGo/web search for recent posts by handles in `config/x-watchlist.md`.
 4. Public mirrors, article embeds, newsletters, or search snippets.
 5. Ask Beau for the post text if X blocks access.
 
@@ -32,24 +36,27 @@ the fallback briefly in the digest only when it affects confidence or coverage.
 
 ## Steps
 
-1. Collect recent public posts from the list since the last digest window.
-2. Select only the most interesting posts. Favor:
+1. Try the list URL first. If it is blocked or empty, read
+   `/opt/data/HermesAgent/config/x-watchlist.md`.
+2. Collect recent public posts from the list or watchlist since the last digest
+   window.
+3. Select only the most interesting posts. Favor:
    - concrete news
    - unusual claims
    - useful tools or launches
    - market-moving information
    - strong arguments from credible people
    - repeated themes across multiple people
-3. Group posts by theme rather than account-by-account when possible.
-4. For each selected post, include:
+4. Group posts by theme rather than account-by-account when possible.
+5. For each selected post, include:
    - person/handle
    - short paraphrase
    - why it matters
    - link or source trail
    - confidence level if source access is partial
-5. Cross-check important claims with non-X sources before presenting them as
+6. Cross-check important claims with non-X sources before presenting them as
    facts.
-6. Keep the digest concise enough to read in Discord.
+7. Keep the digest concise enough to read in Discord.
 
 ## Output Format
 
