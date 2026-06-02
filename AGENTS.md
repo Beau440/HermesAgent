@@ -58,3 +58,95 @@ Important personal skills:
   extraction first. `xurl` and `x_search` are optional upgrades only.
 - For page reading, prefer Firecrawl/browser extraction when configured.
 - If access is blocked, say what source failed and use the next safe fallback.
+# X Watchlist
+
+Use this list for public X/Twitter post digests when direct X list extraction is
+blocked or unavailable. Handles are stored without secrets and can be used with
+or without `@`.
+
+## Handles
+
+- @dwarkeshpodcast
+- @SemiAnalysis_
+- @curtis_yarvin
+- @cremieuxrecueil
+- @bubbleboi
+- @LynAldenContact
+- @DeItaone
+- @balajis
+- @spectatorindex
+- @tszzl
+- @Geiger_Capital
+- @GavinSBaker
+- @PalmerLuckey
+- @biancoresearch
+- @karpathy
+- @packyM
+- @micsolana
+- @zerohedge
+- @pmarca
+- @chamath
+- @DavidSacks
+- @sama
+- @elonmusk
+- @MTSlive
+- @tbpn
+- @paulg
+- @levelsio
+- @jaredkushner
+- @DanielSLoeb1
+- @bronzeagemantis
+- @KobeissiLetter
+- @bgurley
+- @whatifalthist
+- @JDVance
+- @MartinShkreli
+- @plaffont
+- @rabois
+- @TrumpDailyPosts
+
+## GBrain Operating System
+
+Use GBrain as Beau's durable project memory.
+
+Paths:
+- GBrain tool: /opt/data/gbrain
+- Brain data: /opt/data/brain
+- Hermes command center: /opt/data/HermesAgent
+
+Use GBrain for:
+- project checkpoints
+- deep research source material
+- grill-me results
+- evals and success criteria
+- run logs
+- blockers
+- decisions
+- learnings
+- resume context after gateway/session restart
+
+Discord commands Beau may use:
+- "add this to GBrain"
+- "checkpoint this project to GBrain"
+- "save this blocker to GBrain"
+- "save this lesson to GBrain"
+- "save this source to GBrain"
+- "resume the last active project from GBrain"
+
+When Beau asks to save something to GBrain:
+1. Decide the memory type.
+2. Save it with `gbrain capture`.
+3. Use a clear slug like `project-name/checkpoint-YYYYMMDD-HHMM`.
+4. Confirm the slug saved.
+
+For serious projects:
+1. Define the goal.
+2. Conduct deep research before implementation.
+3. Save source material to GBrain.
+4. Run a grill-me session to uncover unknowns, risks, and assumptions.
+5. Save grill-me results to GBrain.
+6. Write evals before implementation.
+7. Iterate until evals pass.
+8. Save run logs, blockers, decisions, and learnings to GBrain.
+9. When stuck, query GBrain, do fresh research, and run grill-me again.
+10. If work takes longer than expected, stop and report status.
